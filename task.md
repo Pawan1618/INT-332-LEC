@@ -1,28 +1,52 @@
-🔹 1. Pull Apache (httpd) image
+# Apache Docker Task
+
+---
+
+## 🔹 1. Pull Apache (httpd) Image
+
+```bash
 docker pull httpd
-🔹 2. Verify image downloaded
+📸 Output:
+
+![Step 1](./images/docker pull.png)
+
+🔹 2. Verify Image Downloaded
 docker images
 
 👉 Look for:
 
 REPOSITORY   TAG     IMAGE ID
 httpd        latest  xxxx
-🔹 3. Run container with name + port mapping
+📸 Output:
+![Step 2](./images/verify.png)
+
+🔹 3. Run Container with Name + Port Mapping
 docker run -d -p 8081:80 --name myapache httpd
-🔹 4. Check running containers
+📸 Output:
+![Step 3](./images/exec.png)
+
+🔹 4. Check Running Containers
 docker ps
 
 👉 You should see:
 
 CONTAINER ID   IMAGE   PORTS
 xxxx           httpd   0.0.0.0:8081->80/tcp
-🔹 5. Access Apache in browser
+📸 Output:
+![Step 4](./images/verify.png)
 
-Open:
+🔹 5. Access Apache in Browser
+
+Open in browser:
 
 http://localhost:8081
 
 👉 You should see:
 
+
 It works!
-pic here for task
+📸 Output:
+![final](./images/apacheOn.png)
+
+✅ Task Completed
+![complted](./images/changed.png)
