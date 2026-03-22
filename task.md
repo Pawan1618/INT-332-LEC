@@ -8,7 +8,7 @@
 docker pull httpd
 📸 Output:
 
-![Step 1](/images/docker pull.png)
+![Step 1](images/docker pull.png)
 
 🔹 2. Verify Image Downloaded
 docker images
@@ -18,12 +18,12 @@ docker images
 REPOSITORY   TAG     IMAGE ID
 httpd        latest  xxxx
 📸 Output:
-![Step 2](/images/verify.png)
+![Step 2](images/verify.png)
 
 🔹 3. Run Container with Name + Port Mapping
 docker run -d -p 8081:80 --name myapache httpd
 📸 Output:
-![Step 3](/images/exec.png)
+![Step 3](images/exec.png)
 
 🔹 4. Check Running Containers
 docker ps
@@ -33,7 +33,7 @@ docker ps
 CONTAINER ID   IMAGE   PORTS
 xxxx           httpd   0.0.0.0:8081->80/tcp
 📸 Output:
-![Step 4](/images/verify.png)
+![Step 4](images/verify.png)
 
 🔹 5. Access Apache in Browser
 
@@ -46,7 +46,7 @@ http://localhost:8081
 
 It works!
 📸 Output:
-![final](/images/apacheOn.png)
+![final](images/apacheOn.png)
 
 ✅ Task Completed
-![complted](/images/changed.png)
+![complted](images/changed.png)
